@@ -26,6 +26,14 @@ def is_empty(lista):
     return len(lista) == 0
 
 
+def check_lists(uno, dos):
+
+    if len(uno) >= 3 and len(dos) >= 3:
+        return (uno[2] == dos[2])
+    else:
+        return False
+
+
 def list_of_lists(txt):
     fila1 = txt[0][0:2]
     fila2 = txt[1][1:4]
