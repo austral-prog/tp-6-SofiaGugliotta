@@ -1,20 +1,33 @@
-# Replace the "ANSWER HERE" with your answer
+def remove_elements(lista):
 
-def remove_elements(list_to_remove_elements):
-    return "ANSWER HERE"  # Remove this line and implement
+    if len(lista) == 0:
+        return lista
+    else:
+        del lista[0]
+
+        if len(lista) >= 5:
+            del lista[3:5]
+            return lista
+        elif len(lista) == 4:
+            del lista[3]
+            return lista
+        else:
+            return lista
+            
+
+def add_elements(agregar):
+
+    agregar.insert(0, 'Pink')
+    agregar.append("Yellow")
+    return agregar
 
 
-def add_elements(list_to_add_elements):
-    return "ANSWER HERE"  # Remove this line and implement
+def is_empty(lista):
+    return len(lista) == 0
 
 
-def is_empty(list_to_check):
-    return "ANSWER HERE"  # Remove this line and implement
-
-
-def check_lists(list_to_compare1, list_to_compare2):
-    return "ANSWER HERE"  # Remove this line and implement
-
-
-def list_of_lists(list_of_lists_to_modify):
-    return "ANSWER HERE"  # Remove this line and implement
+def list_of_lists(texto):
+    fila1 = texto[0][0:2]
+    fila2 = texto[1][1:4]
+    fila3 = texto[2][-2:]
+    return [fila1, fila2, fila3]
