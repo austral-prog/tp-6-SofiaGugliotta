@@ -26,8 +26,8 @@ def is_empty(lista):
     return len(lista) == 0
 
 
-def list_of_lists(texto):
-    fila1 = texto[0][0:2]
-    fila2 = texto[1][1:4]
-    fila3 = texto[2][-2:]
+def list_of_lists(txt):
+    fila1 = txt[0][0:2]
+    fila2 = txt[1][1:4]
+    fila3 = txt[2][-2:]
     return [fila1, fila2, fila3]
